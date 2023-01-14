@@ -1,0 +1,33 @@
+@import "base/variables";
+@import "base/mixins";
+
+* {
+  font-family: "Sans";
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  @media (max-width: 991px) {
+    max-width: 750px;
+  }
+  @media (max-width: 767px) {
+    max-width: 560px;
+  }
+  @media (max-width: 575px) {
+    max-width: 310px;
+  }
+}
+
+.title {
+  color: #0d0d0d;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/benefits";
+@import "base/media";
